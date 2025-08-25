@@ -1,0 +1,18 @@
+````
+
+This file should be empty - just create it.
+
+## Step 3: Update your Astro config for GitHub Pages
+
+Check your repository name and update your astro config:
+
+````js
+<vscode_codeblock_uri>file:///c%3A/portfolio/portfolio/astro.config.mjs</vscode_codeblock_uri>import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
+
+export default defineConfig({
+  integrations: [react()],
+  base: '/portfolio/', // Change this to your actual repo name
+  // If your repo is named exactly 'portfolio', keep it as '/portfolio/'
+  // If it's your username.github.io repo, change to '/'
+});
